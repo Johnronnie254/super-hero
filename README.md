@@ -256,3 +256,4 @@ JSON data, along with the appropriate HTTP status code:
   "errors": ["validation errors"]
 }
 ```
+# super-hero
