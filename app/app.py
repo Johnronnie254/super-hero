@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+
+
 from flask import Flask, jsonify, abort, request
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
@@ -9,7 +12,7 @@ app.config.from_object(Config)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///../instance/app.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
-db.init_app(app)  # Initialize SQLAlchemy with the Flask app
+db.init_app(app)  
 migrate = Migrate(app, db)
 
 
